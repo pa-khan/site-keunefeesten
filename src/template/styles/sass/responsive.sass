@@ -1,6 +1,38 @@
+@media screen and (max-width: 1400px)
+	.tickets-btn
+		right: 0
+
+
+@media screen and (max-width: 1340px)
+	.nav
+		&__list
+			li
+				margin-right: 45px
+		&__title
+			right: 110px
+
+
+	.list__desc_pink
+		&:after
+			display: none
 @media screen and (max-width: 1199px)
 	.case
-		width: 950px
+		// width: 950px
+	
+	
+	.nav
+		&__list
+			padding-left: 0
+			li
+				margin-right: 40px
+				&:last-of-type
+					margin-right: 0
+
+		&__title
+			right: 172px
+
+		&-wrap
+			// position: fixed
 	
 	.hidden-lg
 		display: block
@@ -10,10 +42,163 @@
 
 
 	
-@media screen and (max-width: 992px)
+@media screen and (max-width: 1060px)
 	.case
 		width: 750px
 
+	.header
+		height: auto
+		min-height: 1px
+		padding-top: 100px
+		padding-bottom: 60px
+
+	.tickets-btn
+		right: auto
+		left: 0
+		height: 50px
+		font-size: 24px
+		width: calc(100% - 60px)
+		border-right: 3px solid #fff
+	.nav
+		position: fixed
+		&-wrap
+			min-height: 0
+		&__wrap
+			position: fixed
+			top: 50px
+			left: 0
+			bottom: 0
+			flex-direction: column
+			background-color: #263a76
+			width: 70%
+			min-width: 240px
+			justify-content: flex-start
+			align-items: flex-start
+			padding: 10px 15px
+			transition: .3s
+			transform: translateX(-100%)
+			&_open
+				transform: translateX(0%)
+		&__list
+			margin-right: 0
+			margin-bottom: 10px
+			ul
+				flex-direction: column
+			li
+				margin-right: 0
+				margin-bottom: 4px
+				&:last-of-type
+					margin-bottom: 0
+
+		&__title
+			display: none
+
+	.hum
+		position: fixed
+		top: 0
+		right: 0
+		width: 60px
+		height: 50px
+		background: #d7207b
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		cursor: pointer
+		span
+			display: block
+			width: 30px
+			height: 3px
+			margin-bottom: 6px
+			transition: .3s
+			position: relative
+			background-color: #fff
+			&:last-of-type
+				margin-bottom: 0
+		&_open
+			span
+				&:nth-of-type(1)
+					top: 9px
+					transform: rotate(45deg)
+				&:nth-of-type(2)
+					opacity: 0
+				&:nth-of-type(3)
+					top: -9px
+					transform: rotate(-45deg)
+
+	.bg-mobile
+		position: fixed
+		left: 0
+		right: 0
+		bottom: 0
+		top: 50px
+		background: rgba(0,0,0,.6)
+		&_show
+			visibility: visible
+			opacity: 1
+
+
+	.catalog
+		padding-top: 50px
+		padding-bottom: 50px
+		&__item
+			width: calc(50% - 36px)
+
+
+	.list
+		&__item
+			padding-top: 6px
+			padding-bottom: 6px
+		.case
+			height: auto
+
+		&__date, &__time, &__title, &__desc
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			align-items: center
+			text-align: center
+
+		&__title
+			// margin-bottom: 5px
+
+		&__desc
+			margin-top: 6px
+			margin-left: 0
+			&_pink
+				flex-direction: column
+				&:after
+					display: block
+					position: static
+					margin-top: 5px
+
+	.tickets
+		padding-top: 35px
+		padding-bottom: 35px
+		&__left
+			width: 275px
+		&__right
+			width: calc(100% - 275px)
+
+	.desc
+		padding-bottom: 90px
+		&__col
+			width: 100%
+
+	.gallery
+		&__left
+			width: 460px
+		&__right
+			width: 238px
+
+	.footer
+		&__content
+			width: calc(100% - 275px - 200px)
+		&__form
+			// display: none
+			width: 200px
 	.hidden-md
 		display: block		
 	
@@ -25,6 +210,167 @@
 @media screen and (max-width: 767px)
 	.case
 		width: 100%
+	
+	.header
+		&__title
+			width: 236px
+			margin-bottom: 7px
+			margin-left: 0
+			span
+				display: none
+			&:before
+				width: 250px
+				height: 56px
+			&:after
+				// display: none
+				width: 94px
+				height: 85px
+				top: -5px
+				right: -61px
+				background-size: cover
+		&__desc
+			width: 146px
+			padding: 5px 7px
+			margin-left: 30px
+
+		&__text
+			height: 48px
+			font-size: 24px
+			padding-top: 6px
+			padding-left: 5px
+			padding-right: 5px
+
+	.catalog
+		&__list
+			margin-left: 0
+			margin-right: 0
+		&__item
+			width: 100%
+			margin-left: 0
+			margin-right: 0
+
+		&__text
+			padding: 25px 15px 15px
+			line-height: 24px
+			h3
+				display: none
+
+
+	.tickets
+		&__left
+			margin-left: auto
+			margin-right: auto
+		&__right
+			width: 100%
+			
+		&__img
+			&:after
+				top: 191px
+				transform: rotate(25deg) scale(1, -1)
+
+		&__title
+			text-align: center
+			margin-top: 20px
+			margin-bottom: 25px
+			a
+				font-size: 22px
+				text-align: center
+				padding: 10px 10px 6px
+
+		&__col
+			width: 100%
+			margin-bottom: 25px
+			&:last-of-type
+				margin-bottom: 0
+
+		&__text
+			h3
+				font-size: 21px
+				margin-bottom: 6px
+
+	.desc
+		padding-top: 30px
+		padding-bottom: 115px
+		&__content
+			padding-right: 0
+			width: 100%
+			margin-bottom: 25px
+		&__title
+			margin-bottom: 20px
+			span
+				font-size: 23px
+				padding: 4px 15px
+		&__col
+			padding-right: 0
+			p
+				margin-bottom: 12px
+				&:last-of-type
+					margin-bottom: 0
+		&__form
+			width: 100%
+			&-title
+				span
+					padding-top: 6px
+
+
+	.gallery
+		padding-top: 35px
+		padding-bottom: 20px
+		&__title
+			font-size: 24px
+			padding-top: 5px
+		&__list
+			margin-bottom: 0
+		&__left, &__right
+			width: 100%
+		
+		&__item
+			height: 300px
+			margin-bottom: 20px
+
+
+
+	.footer
+		padding-top: 30px
+		padding-bottom: 30px
+		overflow: hidden
+		&__wrap
+			flex-direction: column
+		&__org
+			margin-left: auto
+			margin-right: auto
+		&__title
+			display: none
+		&__content
+			width: 100%
+			padding-left: 0
+			text-align: center
+			padding-top: 25px
+		&__socials
+			margin-bottom: 15px
+			ul
+				justify-content: center
+
+		&__form
+			margin-left: auto
+			margin-right: auto
+			margin-top: 20px
+			width: 275px
+			
+
+	.fancybox-slide--image .fancybox-content
+		width: 280px !important
+		height: 170px !important
+
+	.fancybox-navigation .fancybox-button--arrow_left
+		left: 0
+		margin-left: 0
+
+	.fancybox-navigation .fancybox-button--arrow_right
+		right: 0
+		margin-right: 0
+
+
 
 	.hidden-sm
 		display: block
@@ -33,3 +379,21 @@
 		display: none
 	
 
+@media screen and (max-width: 420px)
+	.catalog
+		&__img
+			height: 240px
+		&__title
+			height: 54px
+			font-size: 22px
+			padding-left: 20px
+			padding-right: 20px
+
+
+	.gallery
+		&__item
+			height: 240px
+
+	.nav
+		&__wrap
+			width: calc(100% - 60px)

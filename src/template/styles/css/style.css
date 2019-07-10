@@ -204,7 +204,9 @@ input, textarea, button {
     display: block;
     font-size: 14px;
     font-family: "Cooper Hewitt", sans-serif;
-    width: 100%; }
+    width: 100%;
+    -webkit-border-radius: 0 !important;
+            border-radius: 0 !important; }
     .input__wrap:focus + label {
       opacity: 0;
       visibility: hidden; }
@@ -251,7 +253,9 @@ input, textarea, button {
     font-family: "Cooper Hewitt", sans-serif;
     background: white;
     width: 100%;
-    resize: none; }
+    resize: none;
+    -webkit-border-radius: 0 !important;
+            border-radius: 0 !important; }
     .textarea__wrap:focus + label {
       opacity: 0;
       visibility: hidden; }

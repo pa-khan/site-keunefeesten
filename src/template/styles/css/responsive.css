@@ -89,6 +89,8 @@
         margin-bottom: 4px; }
         .nav__list li:last-of-type {
           margin-bottom: 0; }
+      .nav__list a {
+        font-size: 24px; }
     .nav__title {
       display: none; }
   .hum {
@@ -371,8 +373,7 @@
   .catalog__img {
     height: 240px; }
   .catalog__title {
-    height: 54px;
-    font-size: 22px;
+    font-size: 24px;
     padding-left: 20px;
     padding-right: 20px; }
   .gallery__item {
